@@ -1,0 +1,86 @@
+/* https://www.w3schools.com/cssref/pr_background-attachment.asp see this for "main" content tutorial.*/
+
+/* https://imagekit.io/blog/lazy-loading-images-complete-guide/#3-avoiding-content-shifting-with-lazy-loading     see this for "Lazy" loading*/
+
+
+
+/* https://css-tricks.com/almanac/properties/f/flex/    Didn't work, Too much inline CSS?*/
+/* header, */
+/* footer  { flex: 1 100%; } */
+/* sidebar { flex: 1; } */
+/* main    { flex: 2; } */
+
+.placeholder {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif');
+}
+
+/* .form{ */
+	
+/* 	background-repeat: no-repeat; */
+/*     background-size: contain; */
+/*    background-image: url('https://www.wpclipart.com/page_frames/more_frames/more_frames_2/hazard_page_outline_border.png');  this works*/ 
+	
+/* } */
+
+main {
+/*   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+
+body{
+	background-image: url("https://cdn11.bigcommerce.com/s-bexuyutckh/product_images/uploaded_images/thumbnail-birknw-web.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: contain, cover;
+
+
+}
+
+/* https://www.w3schools.com/css/css_image_transparency.asp */
+nav{
+	opacity: 0.95;
+	border-radius:10px;
+	color: blue;
+	background-color:white;
+}
+
+header{
+	border-radius:10px;
+	opacity: 0.95;
+	background-color:white;
+}
+
+.rounded{
+	border-radius:25px;
+}
+.item{
+    position: relative;
+    height:100%;
+     flex-grow: 1;
+}
+
+  .carousel-inner > .item > img,  
+/*   https://www.sitepoint.com/community/t/problem-with-images-resizing-in-carousel/280578/5 */
+  .carousel-inner > .item > a > img  {  
+      width: 80%;  
+      margin: auto;  
+  }  
+  
+  .image-overlay {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .8); 
+}
+  
